@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\royol\\Documents\\backend\\apis\\BibliotecaISTLC\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AAFD0918-1406-4B90-9FF8-6F6EA19E6665}|BibliotecaISTLC\\BibliotecaISTLC.csproj|c:\\users\\royol\\documents\\backend\\apis\\bibliotecaistlc\\bibliotecaistlc\\controllers\\autorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAFD0918-1406-4B90-9FF8-6F6EA19E6665}|BibliotecaISTLC\\BibliotecaISTLC.csproj|solutionrelative:bibliotecaistlc\\controllers\\autorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAFD0918-1406-4B90-9FF8-6F6EA19E6665}|BibliotecaISTLC\\BibliotecaISTLC.csproj|c:\\users\\royol\\documents\\backend\\apis\\bibliotecaistlc\\bibliotecaistlc\\context\\bibliotecaistlccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAFD0918-1406-4B90-9FF8-6F6EA19E6665}|BibliotecaISTLC\\BibliotecaISTLC.csproj|solutionrelative:bibliotecaistlc\\context\\bibliotecaistlccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AAFD0918-1406-4B90-9FF8-6F6EA19E6665}|BibliotecaISTLC\\BibliotecaISTLC.csproj|c:\\users\\royol\\documents\\backend\\apis\\bibliotecaistlc\\bibliotecaistlc\\controllers\\libroescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAFD0918-1406-4B90-9FF8-6F6EA19E6665}|BibliotecaISTLC\\BibliotecaISTLC.csproj|solutionrelative:bibliotecaistlc\\controllers\\libroescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AAFD0918-1406-4B90-9FF8-6F6EA19E6665}|BibliotecaISTLC\\BibliotecaISTLC.csproj|c:\\users\\royol\\documents\\backend\\apis\\bibliotecaistlc\\bibliotecaistlc\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAFD0918-1406-4B90-9FF8-6F6EA19E6665}|BibliotecaISTLC\\BibliotecaISTLC.csproj|solutionrelative:bibliotecaistlc\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AAFD0918-1406-4B90-9FF8-6F6EA19E6665}|BibliotecaISTLC\\BibliotecaISTLC.csproj|c:\\users\\royol\\documents\\backend\\apis\\bibliotecaistlc\\bibliotecaistlc\\controllers\\autorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AAFD0918-1406-4B90-9FF8-6F6EA19E6665}|BibliotecaISTLC\\BibliotecaISTLC.csproj|solutionrelative:bibliotecaistlc\\controllers\\autorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\royol\\Documents\\backend\\apis\\BibliotecaISTLC\\BibliotecaISTLC\\Context\\BibliotecaIstlcContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BibliotecaISTLC\\Context\\BibliotecaIstlcContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "LibroesController.cs",
               "DocumentMoniker": "C:\\Users\\royol\\Documents\\backend\\apis\\BibliotecaISTLC\\BibliotecaISTLC\\Controllers\\LibroesController.cs",
               "RelativeDocumentMoniker": "BibliotecaISTLC\\Controllers\\LibroesController.cs",
@@ -42,12 +42,11 @@
               "RelativeToolTip": "BibliotecaISTLC\\Controllers\\LibroesController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T01:04:24.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T01:04:24.276Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "EditorialsController.cs",
               "DocumentMoniker": "C:\\Users\\royol\\Documents\\backend\\apis\\BibliotecaISTLC\\BibliotecaISTLC\\Controllers\\EditorialsController.cs",
               "RelativeDocumentMoniker": "BibliotecaISTLC\\Controllers\\EditorialsController.cs",
@@ -55,12 +54,11 @@
               "RelativeToolTip": "BibliotecaISTLC\\Controllers\\EditorialsController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T01:03:29.502Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T01:03:29.502Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CategoriasController.cs",
               "DocumentMoniker": "C:\\Users\\royol\\Documents\\backend\\apis\\BibliotecaISTLC\\BibliotecaISTLC\\Controllers\\CategoriasController.cs",
               "RelativeDocumentMoniker": "BibliotecaISTLC\\Controllers\\CategoriasController.cs",
@@ -68,12 +66,11 @@
               "RelativeToolTip": "BibliotecaISTLC\\Controllers\\CategoriasController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T01:02:39.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T01:02:39.72Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "AutorsController.cs",
               "DocumentMoniker": "C:\\Users\\royol\\Documents\\backend\\apis\\BibliotecaISTLC\\BibliotecaISTLC\\Controllers\\AutorsController.cs",
               "RelativeDocumentMoniker": "BibliotecaISTLC\\Controllers\\AutorsController.cs",
@@ -86,13 +83,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "BibliotecaIstlcContext.cs",
               "DocumentMoniker": "C:\\Users\\royol\\Documents\\backend\\apis\\BibliotecaISTLC\\BibliotecaISTLC\\Context\\BibliotecaIstlcContext.cs",
               "RelativeDocumentMoniker": "BibliotecaISTLC\\Context\\BibliotecaIstlcContext.cs",
               "ToolTip": "C:\\Users\\royol\\Documents\\backend\\apis\\BibliotecaISTLC\\BibliotecaISTLC\\Context\\BibliotecaIstlcContext.cs",
               "RelativeToolTip": "BibliotecaISTLC\\Context\\BibliotecaIstlcContext.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAYwAoAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T00:56:56.085Z",
               "EditorCaption": ""

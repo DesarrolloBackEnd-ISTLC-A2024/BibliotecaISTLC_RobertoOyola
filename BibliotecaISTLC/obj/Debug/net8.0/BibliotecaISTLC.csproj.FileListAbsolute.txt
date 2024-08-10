@@ -251,3 +251,4 @@ C:\Users\royol\Documents\backend\apis\BibliotecaISTLC\BibliotecaISTLC\bin\Debug\
 C:\Users\royol\Documents\backend\apis\BibliotecaISTLC\BibliotecaISTLC\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\royol\Documents\backend\apis\BibliotecaISTLC\BibliotecaISTLC\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\royol\Documents\backend\apis\BibliotecaISTLC\BibliotecaISTLC\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\royol\Documents\backend\apis\BibliotecaISTLC\BibliotecaISTLC\obj\Debug\net8.0\BibliotecaISTLC.sourcelink.json
