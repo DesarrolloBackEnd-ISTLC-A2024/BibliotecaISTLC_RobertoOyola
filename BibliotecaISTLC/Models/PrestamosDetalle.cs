@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace BibliotecaISTLC.Models;
 
-public partial class PrestamoDetalle
+public partial class PrestamosDetalle
 {
     public int IdPrestamo { get; set; }
 

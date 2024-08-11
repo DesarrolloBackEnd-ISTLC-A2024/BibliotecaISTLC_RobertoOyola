@@ -27,5 +27,7 @@ public partial class Libro
 
     public virtual ICollection<Movimiento> Movimientos { get; set; } = new List<Movimiento>();
 
-    public virtual ICollection<PrestamoDetalle> PrestamoDetalles { get; set; } = new List<PrestamoDetalle>();
+    public virtual ICollection<Novedade> Novedades { get; set; } = new List<Novedade>();
+
+    public virtual ICollection<PrestamosDetalle> PrestamosDetalles { get; set; } = new List<PrestamosDetalle>();
 }

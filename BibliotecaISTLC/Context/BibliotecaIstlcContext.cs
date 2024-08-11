@@ -30,9 +30,11 @@ public partial class BibliotecaIstlcContext : DbContext
 
     public virtual DbSet<Multa> Multas { get; set; }
 
-    public virtual DbSet<PrestamoDetalle> PrestamoDetalles { get; set; }
+    public virtual DbSet<Novedade> Novedades { get; set; }
 
     public virtual DbSet<PrestamosCabecera> PrestamosCabeceras { get; set; }
+
+    public virtual DbSet<PrestamosDetalle> PrestamosDetalles { get; set; }
 
     public virtual DbSet<Usuario> Usuarios { get; set; }
 
@@ -44,7 +46,7 @@ public partial class BibliotecaIstlcContext : DbContext
     {
         modelBuilder.Entity<Autor>(entity =>
         {
-            entity.HasKey(e => e.IdAutor).HasName("PK__AUTOR__DA37C137F0FD0E1F");
+            entity.HasKey(e => e.IdAutor).HasName("PK__AUTOR__DA37C1376AA295F9");
 
             entity.ToTable("AUTOR");
 
@@ -63,7 +65,7 @@ public partial class BibliotecaIstlcContext : DbContext
 
         modelBuilder.Entity<Categoria>(entity =>
         {
-            entity.HasKey(e => e.IdCategoria).HasName("PK__CATEGORI__4BD51FA53FB0D36F");
+            entity.HasKey(e => e.IdCategoria).HasName("PK__CATEGORI__4BD51FA57F02C735");
 
             entity.ToTable("CATEGORIAS");
 
@@ -82,7 +84,7 @@ public partial class BibliotecaIstlcContext : DbContext
 
         modelBuilder.Entity<Editorial>(entity =>
         {
-            entity.HasKey(e => e.IdEditorial).HasName("PK__EDITORIA__EA05B1D7A83929A7");
+            entity.HasKey(e => e.IdEditorial).HasName("PK__EDITORIA__EA05B1D715BF6996");
 
             entity.ToTable("EDITORIAL");
 
@@ -101,7 +103,7 @@ public partial class BibliotecaIstlcContext : DbContext
 
         modelBuilder.Entity<Inventario>(entity =>
         {
-            entity.HasKey(e => e.IdLibros).HasName("PK__INVENTAR__0ECE31B2550345B7");
+            entity.HasKey(e => e.IdLibros).HasName("PK__INVENTAR__0ECE31B293C0A0A3");
 
             entity.ToTable("INVENTARIO");
 
@@ -119,12 +121,12 @@ public partial class BibliotecaIstlcContext : DbContext
             entity.HasOne(d => d.IdLibrosNavigation).WithOne(p => p.Inventario)
                 .HasForeignKey<Inventario>(d => d.IdLibros)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__INVENTARI__ID_LI__4AB81AF0");
+                .HasConstraintName("FK__INVENTARI__ID_LI__4D94879B");
         });
 
         modelBuilder.Entity<Libro>(entity =>
         {
-            entity.HasKey(e => e.IdLibros).HasName("PK__LIBROS__0ECE31B2E0F0C8A6");
+            entity.HasKey(e => e.IdLibros).HasName("PK__LIBROS__0ECE31B26049843F");
 
             entity.ToTable("LIBROS");
 
@@ -158,7 +160,7 @@ public partial class BibliotecaIstlcContext : DbContext
 
         modelBuilder.Entity<Movimiento>(entity =>
         {
-            entity.HasKey(e => e.IdMovimiento).HasName("PK__MOVIMIEN__44BC2ADA3B14E38B");
+            entity.HasKey(e => e.IdMovimiento).HasName("PK__MOVIMIEN__44BC2ADA0E5641C6");
 
             entity.ToTable("MOVIMIENTOS");
 
@@ -178,12 +180,12 @@ public partial class BibliotecaIstlcContext : DbContext
 
             entity.HasOne(d => d.IdLibrosNavigation).WithMany(p => p.Movimientos)
                 .HasForeignKey(d => d.IdLibros)
-                .HasConstraintName("FK__MOVIMIENT__ID_LI__4D94879B");
+                .HasConstraintName("FK__MOVIMIENT__ID_LI__5070F446");
         });
 
         modelBuilder.Entity<Multa>(entity =>
         {
-            entity.HasKey(e => e.IdMulta).HasName("PK__MULTAS__1C1448B24F5ABD88");
+            entity.HasKey(e => e.IdMulta).HasName("PK__MULTAS__1C1448B254A92A1C");
 
             entity.ToTable("MULTAS");
 
@@ -205,36 +207,36 @@ public partial class BibliotecaIstlcContext : DbContext
 
             entity.HasOne(d => d.IdPrestamoNavigation).WithMany(p => p.Multa)
                 .HasForeignKey(d => d.IdPrestamo)
-                .HasConstraintName("FK__MULTAS__ID_PREST__5070F446");
+                .HasConstraintName("FK__MULTAS__ID_PREST__4AB81AF0");
         });
 
-        modelBuilder.Entity<PrestamoDetalle>(entity =>
+        modelBuilder.Entity<Novedade>(entity =>
         {
-            entity.HasKey(e => new { e.IdPrestamo, e.IdDetalle }).HasName("PK__PRESTAMO__561558C97099E115");
+            entity.HasKey(e => e.IdNovedad).HasName("PK__NOVEDADE__FE457EA11031D408");
 
-            entity.ToTable("PRESTAMO_DETALLE");
+            entity.ToTable("NOVEDADES");
 
-            entity.Property(e => e.IdPrestamo).HasColumnName("ID_PRESTAMO");
-            entity.Property(e => e.IdDetalle).HasColumnName("ID_DETALLE");
+            entity.Property(e => e.IdNovedad)
+                .ValueGeneratedNever()
+                .HasColumnName("ID_NOVEDAD");
             entity.Property(e => e.Estado)
                 .HasMaxLength(1)
                 .IsUnicode(false)
                 .HasColumnName("ESTADO");
             entity.Property(e => e.IdLibros).HasColumnName("ID_LIBROS");
+            entity.Property(e => e.Motivo)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasColumnName("MOTIVO");
 
-            entity.HasOne(d => d.IdLibrosNavigation).WithMany(p => p.PrestamoDetalles)
+            entity.HasOne(d => d.IdLibrosNavigation).WithMany(p => p.Novedades)
                 .HasForeignKey(d => d.IdLibros)
-                .HasConstraintName("FK__PRESTAMO___ID_LI__47DBAE45");
-
-            entity.HasOne(d => d.IdPrestamoNavigation).WithMany(p => p.PrestamoDetalles)
-                .HasForeignKey(d => d.IdPrestamo)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__PRESTAMO___ID_PR__46E78A0C");
+                .HasConstraintName("FK__NOVEDADES__ID_LI__534D60F1");
         });
 
         modelBuilder.Entity<PrestamosCabecera>(entity =>
         {
-            entity.HasKey(e => e.IdPrestamo).HasName("PK__PRESTAMO__3D5A1E6CA132AFA3");
+            entity.HasKey(e => e.IdPrestamo).HasName("PK__PRESTAMO__3D5A1E6C7161987B");
 
             entity.ToTable("PRESTAMOS_CABECERA");
 
@@ -266,9 +268,33 @@ public partial class BibliotecaIstlcContext : DbContext
                 .HasConstraintName("FK__PRESTAMOS__ID_US__440B1D61");
         });
 
+        modelBuilder.Entity<PrestamosDetalle>(entity =>
+        {
+            entity.HasKey(e => new { e.IdPrestamo, e.IdDetalle }).HasName("PK__PRESTAMO__561558C986494EDA");
+
+            entity.ToTable("PRESTAMOS_DETALLE");
+
+            entity.Property(e => e.IdPrestamo).HasColumnName("ID_PRESTAMO");
+            entity.Property(e => e.IdDetalle).HasColumnName("ID_DETALLE");
+            entity.Property(e => e.Estado)
+                .HasMaxLength(1)
+                .IsUnicode(false)
+                .HasColumnName("ESTADO");
+            entity.Property(e => e.IdLibros).HasColumnName("ID_LIBROS");
+
+            entity.HasOne(d => d.IdLibrosNavigation).WithMany(p => p.PrestamosDetalles)
+                .HasForeignKey(d => d.IdLibros)
+                .HasConstraintName("FK__PRESTAMOS__ID_LI__47DBAE45");
+
+            entity.HasOne(d => d.IdPrestamoNavigation).WithMany(p => p.PrestamosDetalles)
+                .HasForeignKey(d => d.IdPrestamo)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__PRESTAMOS__ID_PR__46E78A0C");
+        });
+
         modelBuilder.Entity<Usuario>(entity =>
         {
-            entity.HasKey(e => e.IdUsuario).HasName("PK__USUARIOS__91136B90C3A24B9A");
+            entity.HasKey(e => e.IdUsuario).HasName("PK__USUARIOS__91136B90E64D67AE");
 
             entity.ToTable("USUARIOS");
 

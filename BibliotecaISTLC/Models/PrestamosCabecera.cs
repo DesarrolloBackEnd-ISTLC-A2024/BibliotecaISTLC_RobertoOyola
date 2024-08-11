@@ -25,5 +25,5 @@ public partial class PrestamosCabecera
 
     public virtual ICollection<Multa> Multa { get; set; } = new List<Multa>();
 
-    public virtual ICollection<PrestamoDetalle> PrestamoDetalles { get; set; } = new List<PrestamoDetalle>();
+    public virtual ICollection<PrestamosDetalle> PrestamosDetalles { get; set; } = new List<PrestamosDetalle>();
 }
