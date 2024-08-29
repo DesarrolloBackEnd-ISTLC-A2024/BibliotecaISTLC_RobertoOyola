@@ -122,9 +122,9 @@ namespace BibliotecaISTLC.Controllers
             for (int i = 0; i < list.Count; i++)
             {
                 AutorDTO obj = new AutorDTO();
-                var item = list[i];
-                obj.IdAutor = item.IdAutor;
-                obj.NombreAutor = item.NombreAutor;
+                var autor = list[i];
+                obj.IdAutor = autor.IdAutor;
+                obj.NombreAutor = autor.NombreAutor;
                 result.Add(obj);
             }
             return result;
@@ -137,14 +137,15 @@ namespace BibliotecaISTLC.Controllers
                 IdAutor = autor.IdAutor,
                 NombreAutor = autor.NombreAutor
             };
+
             return obj;
         }
 
-        private Autor transformaDTOaAutor(AutorDTO autor)
+        private Autor transformaDTOaAutor(AutorDTO autorDTO)
         {
             Autor obj = new Autor();
-            obj.IdAutor = autor.IdAutor;
-            obj.NombreAutor = autor.NombreAutor;
+            obj.IdAutor = autorDTO.IdAutor;
+            obj.NombreAutor = autorDTO.NombreAutor;
             obj.Estado = "A";
 
             return obj;

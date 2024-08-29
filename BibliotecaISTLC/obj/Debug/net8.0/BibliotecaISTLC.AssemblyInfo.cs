@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BibliotecaISTLC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08a8e8fbe75bf493cf0d24cfd26eb7b18e22e057")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eff9a084c70799cf167a1df9523d086718d2f260")]
 [assembly: System.Reflection.AssemblyProductAttribute("BibliotecaISTLC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BibliotecaISTLC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
